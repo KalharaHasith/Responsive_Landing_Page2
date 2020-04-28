@@ -4,8 +4,15 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif !important;
+}
+
 .header {
   background: #ff42b3;
+  /* width: 90%; */
+  margin: auto;
 }
 
 .navbar {
@@ -25,16 +32,20 @@
   /* position: relative !important; */
 }
 
+.nav-link:hover {
+  border-bottom: 2px solid #ffffff;
+}
 .navbar-brand {
   font-weight: 400px;
   /* margin: 15px 5px; */
   padding: 0 10px 5px 0 !important;
-  color: #595968 !important;
+  color: #ffffff !important;
   font-family: "Segoe UI";
+  font-weight: bold;
 }
 
 .navbar-brand img {
-  height: 38px;
+  height: 50px;
   padding: 0 5px 5px 0 !important;
   /* color: #ffffff !important; */
 }
@@ -48,4 +59,68 @@
   border: 0 !important;
   outline: none !important;
   padding: initial !important;
+}
+
+.active-home {
+  border-bottom: 2px solid #ffffff;
+}
+
+.banner {
+  margin-top: 11%;
+  color: #ffffff;
+  margin-left: 135px !important;
+  /* display: inline-block; */
+}
+
+.banner h1 {
+  margin: 50px 0 50px;
+  font-weight: 600;
+  font-size: 50px;
+  /* text-align: center !important; */
+}
+
+.banner img {
+  max-height: 1050px;
+  margin-top: -120px !important;
+  /* padding-top: -120px; */
+}
+
+.banner a {
+  padding: 12px;
+  width: 150px;
+  display: inline-block;
+  background: #e450bb;
+  text-decoration: none !important;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 30px;
+  /* font-weight: bold; */
+  font-size: 14px;
+}
+
+.banner a:hover {
+  color: #ffffff;
+}
+
+.banner p {
+  font-size: 22px;
+}
+
+.express-btn {
+  background: #ffffff !important;
+  color: #c95ec4 !important;
+  border: 5px solid #e450bb !important;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 720px) {
+  .banner {
+    margin-top: 12%;
+    color: #ffffff;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+    /* display: inline-block; */
+  }
 }
